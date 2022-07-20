@@ -1,0 +1,220 @@
+/* STYLE SECTIONING TAGS */
+* { /* Reset the space of the webpage */
+   margin: 0px;
+   padding: 0px;
+}
+
+body {
+ background-color: #dedede; 
+}
+
+/* STYLE TEXT, all the headers */
+
+
+h1{
+  font-size: 90px;
+  color: #ffffff;
+ text-shadow: 5px 5px 5px #757575;
+ /*;
+ width: 300px;
+  float: right;
+  padding: 30px;
+   position: absolute;
+  top: 80px;
+  left: 30px;*/
+}
+h2{
+  font-size: 100px;
+  color: #ffffff;
+ text-shadow: 5px 5px 5px #757575;
+/*    position: absolute; */
+ 
+}
+h4{
+   
+  color: #99b3f0;
+  text-shadow: 3px 3px 5px #404040;
+/*  position: absolute; */
+/*   top: 400px;
+  left: 30px; */
+  display: inline-block;
+  width: 30%;
+  font-size: 25px;
+  font-family: "Koulen", cursive;
+
+}
+ h5{
+   text-align: center;
+   margin-top: 15px;
+   margin-bottom: 15px;
+ }
+p{
+   text-align: center;
+   color: #303030;
+   font-size: 18px;
+   margin-top: 20px;
+   margin-left: 60px;
+   margin-right: 60px;
+   margin-bottom: 30px;
+ }
+  /* ending of all the heading styles^^^*/
+/* STYLE IMAGES */
+
+/*Home page top image */
+/*Gabi and portia did this>> allowing the text to be attached to the image :)  */
+.image_container {
+  position: relative;
+  text-align: left;
+  color: white;
+  
+}
+.top-left {
+  position: absolute;
+  top: 8px;
+  right:1000px:
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.center
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -130%);
+}
+/*Gabi and portia did this :) ^^^^  */
+
+/* STYLE NAV BAR */
+li {
+  display: inline;
+}
+li a{
+  text-decoration: none;
+  color: white;
+    padding: 1em;
+}
+li a:hover {
+background-color: lightgray 
+}
+nav {
+  background-color: #949494;
+    padding: .5em;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Times New Roman", sans-serif;
+}/*NAV bar style ended^^*/
+
+
+.crisis1{/* all the styling for the home page*/
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  opacity: .8;
+}
+.crisis2:hover {
+  box-shadow: 0 0 5px 1px rgba(0, 140, 186, 0.5)
+}
+.crisis2{
+  width: 500px;
+  height: 300px;
+  margin-left: 10px;
+  margin-top: 80px;
+  object-fit: cover;
+  opacity: .7;
+}
+#home1 {
+   margin-left: 60px;
+  margin-top: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  color: grey;
+   color: white;
+  text-shadow: 3px 3px 5px #404040;
+}
+#home2 {
+  margin-left: 50px;
+  margin-top: 10px;
+  font-size: 25px;
+  /*left: 970px;
+  position: absolute;
+ top: 1035px;*/
+  font-size:25px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 3px 3px 5px #404040;
+}/* finsihed styling for the home page^^*/
+
+#syria-title {/*SYRIA and AFGHANISTAN styles together because most of them are shared through classes soooo :)*/
+  font-size: 100px;
+  color: #ffffff;
+ text-shadow: 5px 5px 5px #757575;
+   position: absolute;
+ top: 225px;
+  left: 580px;
+}
+
+.afghan{
+ width: 718px;
+  height: 500px;
+  object-fit: cover;
+  opacity: .8;
+}
+.syria{
+  width: 718px;
+  height: 500px;
+  object-fit: cover;
+  opacity: .8;
+}
+#top{
+   position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+.page{
+  display: inline-block;
+}/*completion of the styling for AGHANISTAN and SYRIA!!!^^*/
+#factor{/*All the fact generator to make it look CUTE :))*/
+  text-align: center;
+  background-color: #ffebfb;
+  margin-left: 350px;
+   margin-right: 350px;
+  border: 2px solid;
+}
+#color{
+  color: #162779;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: 28px;
+}
+#fact{
+  font-size: 33px;
+  color: #ff57ca;
+  text-shadow: 1px 1px 5px #969292;
+  font-family: "Koulen", cursive;
+}/*End of the fact generator prettinesss :))^^^^*/
+
+.flexbox-container{/*All the responsive extension work*/
+  display: flex;
+  flex-direction: column;
+ flex-wrap: nowrap;
+  
+}
+.flex-item{
+  flex-basis: 100%;
+ text-align: center;
+}
+
+@media screen and (max-width:991px){
+  .flex-container{
+    flex-wrap: wrap;
+  }
+  .crisis1{
+    width: 100%;
+    height: auto;
+  }
+  .crisis2{
+    width: 70%;
+    height: auto;
+  }
+}/*End of the responsive extension work^^^*/
